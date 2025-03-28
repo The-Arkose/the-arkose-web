@@ -1,7 +1,7 @@
-import minecraft from '../../assets/minecraft.png'
-import pixark from '../../assets/pixark.png'
-import ark from '../../assets/ark.png'
-import conanExiles from '../../assets/conanExiles.png'
+import ark from '../../assets/ark.png';
+import conanExiles from '../../assets/conanExiles.png';
+import minecraft from '../../assets/minecraft.png';
+import pixark from '../../assets/pixark.png';
 
 export enum servicesType {
   ALL = 'ALL',
@@ -18,4 +18,4 @@ export const allServices = [
   { type: servicesType.STEAM, icon: pixark, name: 'PixARK' },
   { type: servicesType.STEAM, icon: ark, name: 'ARK' },
   { type: servicesType.STEAM, icon: conanExiles, name: 'Conan Exiles' },
-]
+];

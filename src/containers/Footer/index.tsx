@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-import reactLogo from '../../assets/react.svg'
+import reactLogo from '../../assets/react.svg';
 
 export const Footer = () => (
   <Wrapper>
@@ -11,7 +11,7 @@ export const Footer = () => (
       <img src={reactLogo} alt="react" />
     </div>
   </Wrapper>
-)
+);
 
 const Wrapper = styled.div`
   background-color: #222222;
@@ -32,4 +32,4 @@ const Wrapper = styled.div`
       -webkit-transform: rotate(359deg);
     }
   }
-`
+`;

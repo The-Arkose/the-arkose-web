@@ -1,10 +1,10 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-import player from '../../assets/player.png'
-import { Button } from '../../components/Button'
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { useReveal } from '../../hooks/useReveal'
+import player from '../../assets/player.png';
+import { Button } from '../../components/Button';
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
 
 export const About = () => {
   const [playerRef] = useReveal<HTMLImageElement>({
@@ -14,7 +14,7 @@ export const About = () => {
     distance: '300px',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   const [aboutParagraphRef] = useReveal<HTMLDivElement>({
     origin: 'top',
@@ -23,7 +23,7 @@ export const About = () => {
     distance: '300px',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   return (
     <div id="About">
@@ -39,9 +39,7 @@ export const About = () => {
               <b>The Arkose Network</b> is a tiny group established since 2018
               <br />
               Run by{' '}
-              <a href="https://www.youtube.com/user/mark1395711">
-                MrMatches
-              </a>{' '}
+              <a href="https://www.youtube.com/user/mark1395711">MrMatches</a>{' '}
               and couple of partners
               <br />
               We aim to provide a stable hosting services platform for our users
@@ -55,16 +53,16 @@ export const About = () => {
         </div>
       </Wrapper>
     </div>
-  )
-}
+  );
+};
 
 const Wrapper = styled(Section)`
   margin-top: 100vh;
   z-index: 10;
-`
+`;
 
 const Player = styled.img`
   width: 100%;
   -webkit-filter: drop-shadow(-30px 10px 0px rgba(194, 207, 91, 0.7));
   filter: drop-shadow(-30px 0px 0px rgba(194, 207, 91, 0.7));
-`
+`;

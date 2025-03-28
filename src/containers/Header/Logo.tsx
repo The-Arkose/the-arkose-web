@@ -1,10 +1,10 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo.svg';
 
 type Props = {
-  small: boolean
-}
+  small: boolean;
+};
 
 export const Logo = ({ small }: Props) => (
   <Wrapper small={small}>
@@ -14,7 +14,7 @@ export const Logo = ({ small }: Props) => (
       <div>Network</div>
     </Name>
   </Wrapper>
-)
+);
 
 const Name = styled.div<{ small: boolean }>`
   display: inline-block;
@@ -53,7 +53,7 @@ const Name = styled.div<{ small: boolean }>`
   }
   `
       : ''}
-`
+`;
 
 const Wrapper = styled.div<{ small: boolean }>`
   background-color: rgba(34, 34, 34, 0.3);
@@ -105,7 +105,7 @@ const Wrapper = styled.div<{ small: boolean }>`
   }
   `
       : ''}
-`
+`;
 
 const Icon = styled.img<{ small: boolean }>`
   height: 130px;
@@ -118,4 +118,4 @@ const Icon = styled.img<{ small: boolean }>`
   vertical-align: bottom;
   `
       : ''}
-`
+`;

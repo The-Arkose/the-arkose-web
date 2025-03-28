@@ -1,17 +1,17 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 type Props = {
-  href: string
-  icon?: string
-  text: string
-}
+  href: string;
+  icon?: string;
+  text: string;
+};
 
 export const Button = ({ icon, text, ...rest }: Props) => (
   <Wrapper {...rest}>
     {icon && <i className={`fab ${icon}`} />}
     {text}
   </Wrapper>
-)
+);
 
 const Wrapper = styled.a`
   display: inline-block;
@@ -26,4 +26,4 @@ const Wrapper = styled.a`
   & i {
     margin-right: 10px;
   }
-`
+`;

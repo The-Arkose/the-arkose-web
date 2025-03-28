@@ -1,12 +1,12 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-import processor from '../../assets/processor.svg'
-import ram from '../../assets/ram.svg'
-import serverImg from '../../assets/server.svg'
-import background from '../../assets/serverBackground.png'
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { useReveal } from '../../hooks/useReveal'
+import processor from '../../assets/processor.svg';
+import ram from '../../assets/ram.svg';
+import serverImg from '../../assets/server.svg';
+import background from '../../assets/serverBackground.png';
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
 
 export const Server = () => {
   const [serverImageRef] = useReveal<HTMLImageElement>({
@@ -16,7 +16,7 @@ export const Server = () => {
     distance: '0',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   const [cpuRef] = useReveal<HTMLDivElement>({
     duration: 700,
@@ -24,7 +24,7 @@ export const Server = () => {
     distance: '200px',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   const [ramRef] = useReveal<HTMLDivElement>({
     duration: 700,
@@ -32,7 +32,7 @@ export const Server = () => {
     distance: '200px',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   return (
     <div id="Server">
@@ -59,19 +59,19 @@ export const Server = () => {
         </div>
       </Wrapper>
     </div>
-  )
-}
+  );
+};
 
 const Wrapper = styled(Section)`
   color: #fff;
   text-align: center;
-`
+`;
 
 const Image = styled.img`
   margin-top: 50px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-`
+`;
 
 const Component = styled.div`
   position: relative;
@@ -112,4 +112,4 @@ const Component = styled.div`
     padding-top: 10px;
     margin-right: 15px;
   }
-`
+`;

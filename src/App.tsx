@@ -1,11 +1,11 @@
-import { Global, css } from '@emotion/react'
+import { Global, css } from '@emotion/react';
 
-import { About } from './containers/About'
-import { Contact } from './containers/Contact'
-import { Footer } from './containers/Footer'
-import { Header } from './containers/Header'
-import { Server } from './containers/Server'
-import { Services } from './containers/Services'
+import { About } from './containers/About';
+import { Contact } from './containers/Contact';
+import { Footer } from './containers/Footer';
+import { Header } from './containers/Header';
+import { Server } from './containers/Server';
+import { Services } from './containers/Services';
 
 export const App = () => (
   <>
@@ -54,4 +54,4 @@ export const App = () => (
     <Contact />
     <Footer />
   </>
-)
+);

@@ -1,10 +1,10 @@
-import styled from '@emotion/styled'
-import * as React from 'react'
+import styled from '@emotion/styled';
+import * as React from 'react';
 
 type Props = {
-  children: React.ReactNode
-  backgroundImg?: string
-}
+  children: React.ReactNode;
+  backgroundImg?: string;
+};
 
 export const Section = ({ backgroundImg, children, ...rest }: Props) =>
   backgroundImg ? (
@@ -20,10 +20,10 @@ export const Section = ({ backgroundImg, children, ...rest }: Props) =>
     <Wrapper {...rest}>
       <div className="container">{children}</div>
     </Wrapper>
-  )
+  );
 
 const Wrapper = styled.div`
   padding: 70px 0;
   background-color: #fff;
   border-bottom: #eee8be 10px solid;
-`
+`;

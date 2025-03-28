@@ -1,13 +1,13 @@
-import styled from '@emotion/styled'
-import { useState } from 'react'
-import { Scrollchor } from 'react-scrollchor'
+import styled from '@emotion/styled';
+import { useState } from 'react';
+import { Scrollchor } from 'react-scrollchor';
 
 export const Nav = () => {
-  const [showMobileNav, setShowMobileNav] = useState(false)
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   const toggleMobileNav = () => {
-    setShowMobileNav(prev => !prev)
-  }
+    setShowMobileNav((prev) => !prev);
+  };
 
   return (
     <>
@@ -69,8 +69,8 @@ export const Nav = () => {
         </MobileMenu>
       </div>
     </>
-  )
-}
+  );
+};
 
 const Menu = styled.ul`
   float: right;
@@ -93,7 +93,7 @@ const Menu = styled.ul`
     padding: 5px 10px;
     border-radius: 5px;
   }
-`
+`;
 
 const MenuIcon = styled.i`
   margin: 10px;
@@ -103,7 +103,7 @@ const MenuIcon = styled.i`
   border: #fff 3px solid;
   border-radius: 5px;
   cursor: pointer;
-`
+`;
 
 const MobileMenu = styled.ul<{ visible: boolean }>`
   float: right;
@@ -146,4 +146,4 @@ const MobileMenu = styled.ul<{ visible: boolean }>`
   overflow: hidden;
   `
       : ''}
-`
+`;

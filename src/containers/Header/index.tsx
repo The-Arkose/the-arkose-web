@@ -1,40 +1,40 @@
-import styled from '@emotion/styled'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { useWindowScroll } from 'react-use'
+import styled from '@emotion/styled';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useWindowScroll } from 'react-use';
 
-import background from '../../assets/main.png'
-import { Logo } from './Logo'
-import { Nav } from './Nav'
+import background from '../../assets/main.png';
+import { Logo } from './Logo';
+import { Nav } from './Nav';
 
 export const Header = () => {
-  const headerRef = useRef<HTMLHeadingElement>(null)
-  const { y: scrollHeight } = useWindowScroll()
-  const [headerHeight, setHeaderHeight] = useState(0)
+  const headerRef = useRef<HTMLHeadingElement>(null);
+  const { y: scrollHeight } = useWindowScroll();
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   const updateHeader = useCallback(() => {
-    if (!headerRef.current) return
-    setHeaderHeight(headerRef.current.clientHeight)
-  }, [])
+    if (!headerRef.current) return;
+    setHeaderHeight(headerRef.current.clientHeight);
+  }, []);
 
   useEffect(() => {
-    updateHeader()
-  }, [updateHeader])
+    updateHeader();
+  }, [updateHeader]);
 
   useEffect(() => {
-    window.addEventListener('scroll', updateHeader)
-    window.addEventListener('resize', updateHeader)
+    window.addEventListener('scroll', updateHeader);
+    window.addEventListener('resize', updateHeader);
 
     return () => {
-      window.removeEventListener('scroll', updateHeader)
-      window.removeEventListener('resize', updateHeader)
-    }
-  }, [updateHeader])
+      window.removeEventListener('scroll', updateHeader);
+      window.removeEventListener('resize', updateHeader);
+    };
+  }, [updateHeader]);
 
-  const smallLogo = useMemo(() => headerHeight < 300, [headerHeight])
+  const smallLogo = useMemo(() => headerHeight < 300, [headerHeight]);
   const opacity = useMemo(
     () => (100 - ((headerHeight - 100) / headerHeight) * 100) / 100,
-    [headerHeight]
-  )
+    [headerHeight],
+  );
 
   return (
     <Wrapper id="header" ref={headerRef} scrollHeight={scrollHeight}>
@@ -45,8 +45,8 @@ export const Header = () => {
         <Nav />
       </Overlay>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.header<{ scrollHeight: number }>`
   background: #222 50% 50%;
@@ -61,7 +61,7 @@ const Wrapper = styled.header<{ scrollHeight: number }>`
 
   background-image: url(${background});
   height: calc(100vh - ${({ scrollHeight }) => scrollHeight}px);
-`
+`;
 
 const Overlay = styled.div<{ scrollHeight: number; opacity: number }>`
   position: relative;
@@ -70,7 +70,7 @@ const Overlay = styled.div<{ scrollHeight: number; opacity: number }>`
   border-bottom: #eee8be 10px solid;
   height: calc(100vh - ${({ scrollHeight }) => scrollHeight}px);
   background: rgba(34, 34, 34, ${({ opacity }) => opacity});
-`
+`;
 
 const LogoWrapper = styled.div`
   position: absolute;
@@ -80,4 +80,4 @@ const LogoWrapper = styled.div`
   transform: translate(-50%, -50%);
   z-index: 11;
   pointer-events: none;
-`
+`;

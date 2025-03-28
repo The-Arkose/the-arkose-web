@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const Title = styled.h1`
   color: #222222;
@@ -31,4 +31,4 @@ export const Title = styled.h1`
     border-left: 20px solid transparent;
     opacity: 1;
   }
-`
+`;

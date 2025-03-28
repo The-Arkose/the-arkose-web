@@ -1,10 +1,10 @@
-import styled from '@emotion/styled'
-import { useMemo, useState } from 'react'
+import styled from '@emotion/styled';
+import { useMemo, useState } from 'react';
 
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { useReveal } from '../../hooks/useReveal'
-import { allServices, servicesType } from './servicesMap'
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
+import { allServices, servicesType } from './servicesMap';
 
 export const Services = () => {
   const [selectorRef] = useReveal<HTMLDivElement>({
@@ -14,7 +14,7 @@ export const Services = () => {
     distance: '300px',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
   const [listRef] = useReveal<HTMLUListElement>({
     origin: 'left',
@@ -23,17 +23,17 @@ export const Services = () => {
     distance: '0',
     opacity: 0,
     easing: 'ease',
-  })
+  });
 
-  const [type, setType] = useState(servicesType.MC)
+  const [type, setType] = useState(servicesType.MC);
 
   const items = useMemo(
     () =>
       type === servicesType.ALL
         ? allServices
         : allServices.filter(({ type: itemType }) => itemType === type),
-    [type]
-  )
+    [type],
+  );
 
   return (
     <div id="Services">
@@ -56,7 +56,7 @@ export const Services = () => {
           </Selector>
           <List ref={listRef}>
             {items.map(({ icon, name }, i) => (
-              // eslint-disable-next-line react/no-array-index-key
+              // biome-ignore lint/suspicious/noArrayIndexKey: doesn't matter
               <li key={i}>
                 <img src={icon} alt="icon" />
                 {name}
@@ -66,12 +66,12 @@ export const Services = () => {
         </div>
       </Wrapper>
     </div>
-  )
-}
+  );
+};
 
 const Wrapper = styled(Section)`
   text-align: center;
-`
+`;
 
 const Selector = styled.div`
   text-align: left;
@@ -91,7 +91,7 @@ const Selector = styled.div`
   & button:hover {
     color: #948e6f;
   }
-`
+`;
 
 const List = styled.ul`
   list-style: none;
@@ -112,4 +112,4 @@ const List = styled.ul`
     width: 30px;
     margin-right: 10px;
   }
-`
+`;

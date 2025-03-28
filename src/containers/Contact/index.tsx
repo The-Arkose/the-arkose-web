@@ -1,11 +1,11 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-import chest from '../../assets/chest.png'
-import background from '../../assets/contactBackground.png'
-import { Button } from '../../components/Button'
-import { Section } from '../../components/Section'
-import { Title } from '../../components/Title'
-import { useReveal } from '../../hooks/useReveal'
+import chest from '../../assets/chest.png';
+import background from '../../assets/contactBackground.png';
+import { Button } from '../../components/Button';
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
 
 const config = {
   origin: 'left',
@@ -14,12 +14,12 @@ const config = {
   distance: '300px',
   opacity: 0,
   easing: 'ease',
-}
+};
 
 export const Contact = () => {
-  const [contactParagraphRef] = useReveal<HTMLElement>(config)
-  const [contactListRef] = useReveal<HTMLUListElement>(config)
-  const [chestRef] = useReveal<HTMLImageElement>(config)
+  const [contactParagraphRef] = useReveal<HTMLElement>(config);
+  const [contactListRef] = useReveal<HTMLUListElement>(config);
+  const [chestRef] = useReveal<HTMLImageElement>(config);
 
   return (
     <div id="Contact">
@@ -56,22 +56,22 @@ export const Contact = () => {
         </div>
       </Wrapper>
     </div>
-  )
-}
+  );
+};
 
 const ContactList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-`
+`;
 
 const Chest = styled.img`
   margin-top: 70px;
   width: 100%;
   -webkit-filter: drop-shadow(30px 10px 0px rgba(194, 207, 91, 0.7));
   filter: drop-shadow(30px 0px 0px rgba(194, 207, 91, 0.7));
-`
+`;
 
 const Wrapper = styled(Section)`
   color: #fff;
-`
+`;
