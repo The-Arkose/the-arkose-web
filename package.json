@@ -19,8 +19,8 @@
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-scrollchor": "7.0.2",
     "react-use": "17.6.0",
     "scrollreveal": "4.0.9"
