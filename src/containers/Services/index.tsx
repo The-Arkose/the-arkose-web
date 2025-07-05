@@ -1,28 +1,28 @@
-import styled from '@emotion/styled';
-import { useMemo, useState } from 'react';
+import styled from "@emotion/styled";
+import { useMemo, useState } from "react";
 
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
-import { allServices, servicesType } from './servicesMap';
+import { Section } from "../../components/Section";
+import { Title } from "../../components/Title";
+import { useReveal } from "../../hooks/useReveal";
+import { allServices, servicesType } from "./servicesMap";
 
 export const Services = () => {
   const [selectorRef] = useReveal<HTMLDivElement>({
-    origin: 'left',
+    origin: "left",
     duration: 1000,
     delay: 150,
-    distance: '300px',
+    distance: "300px",
     opacity: 0,
-    easing: 'ease',
+    easing: "ease",
   });
 
   const [listRef] = useReveal<HTMLUListElement>({
-    origin: 'left',
+    origin: "left",
     duration: 1000,
     delay: 150,
-    distance: '0',
+    distance: "0",
     opacity: 0,
-    easing: 'ease',
+    easing: "ease",
   });
 
   const [type, setType] = useState(servicesType.MC);

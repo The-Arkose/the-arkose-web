@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import scrollReveal from 'scrollreveal';
+import { useEffect, useRef } from "react";
+import scrollReveal from "scrollreveal";
 
 export const useReveal = <T extends HTMLElement>(
   config: scrollReveal.ScrollRevealObjectOptions,

@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-import reactLogo from '../../assets/react.svg';
+import reactLogo from "../../assets/react.svg";
 
 export const Footer = () => (
   <Wrapper>
