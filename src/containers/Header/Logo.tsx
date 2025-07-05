@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from "../../assets/logo.svg";
 
 type Props = {
   small: boolean;
@@ -52,7 +52,7 @@ const Name = styled.div<{ small: boolean }>`
     font-size: 15px;
   }
   `
-      : ''}
+      : ""}
 `;
 
 const Wrapper = styled.div<{ small: boolean }>`
@@ -104,7 +104,7 @@ const Wrapper = styled.div<{ small: boolean }>`
     opacity: 0;
   }
   `
-      : ''}
+      : ""}
 `;
 
 const Icon = styled.img<{ small: boolean }>`
@@ -117,5 +117,5 @@ const Icon = styled.img<{ small: boolean }>`
   height: 60px;
   vertical-align: bottom;
   `
-      : ''}
+      : ""}
 `;

@@ -1,10 +1,10 @@
-import styled from '@emotion/styled';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useWindowScroll } from 'react-use';
+import styled from "@emotion/styled";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useWindowScroll } from "react-use";
 
-import background from '../../assets/main.png';
-import { Logo } from './Logo';
-import { Nav } from './Nav';
+import background from "../../assets/main.png";
+import { Logo } from "./Logo";
+import { Nav } from "./Nav";
 
 export const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null);
@@ -21,12 +21,12 @@ export const Header = () => {
   }, [updateHeader]);
 
   useEffect(() => {
-    window.addEventListener('scroll', updateHeader);
-    window.addEventListener('resize', updateHeader);
+    window.addEventListener("scroll", updateHeader);
+    window.addEventListener("resize", updateHeader);
 
     return () => {
-      window.removeEventListener('scroll', updateHeader);
-      window.removeEventListener('resize', updateHeader);
+      window.removeEventListener("scroll", updateHeader);
+      window.removeEventListener("resize", updateHeader);
     };
   }, [updateHeader]);
 

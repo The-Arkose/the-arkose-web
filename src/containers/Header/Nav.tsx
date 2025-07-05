@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
-import { useState } from 'react';
-import { Scrollchor } from 'react-scrollchor';
+import styled from "@emotion/styled";
+import { useState } from "react";
+import { Scrollchor } from "react-scrollchor";
 
 export const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -145,5 +145,5 @@ const MobileMenu = styled.ul<{ visible: boolean }>`
   height: 270px;
   overflow: hidden;
   `
-      : ''}
+      : ""}
 `;

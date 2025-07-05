@@ -1,37 +1,37 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-import processor from '../../assets/processor.svg';
-import ram from '../../assets/ram.svg';
-import serverImg from '../../assets/server.svg';
-import background from '../../assets/serverBackground.png';
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
+import processor from "../../assets/processor.svg";
+import ram from "../../assets/ram.svg";
+import serverImg from "../../assets/server.svg";
+import background from "../../assets/serverBackground.png";
+import { Section } from "../../components/Section";
+import { Title } from "../../components/Title";
+import { useReveal } from "../../hooks/useReveal";
 
 export const Server = () => {
   const [serverImageRef] = useReveal<HTMLImageElement>({
     duration: 1000,
     delay: 150,
     scale: 0.9,
-    distance: '0',
+    distance: "0",
     opacity: 0,
-    easing: 'ease',
+    easing: "ease",
   });
 
   const [cpuRef] = useReveal<HTMLDivElement>({
     duration: 700,
     delay: 150,
-    distance: '200px',
+    distance: "200px",
     opacity: 0,
-    easing: 'ease',
+    easing: "ease",
   });
 
   const [ramRef] = useReveal<HTMLDivElement>({
     duration: 700,
     delay: 150,
-    distance: '200px',
+    distance: "200px",
     opacity: 0,
-    easing: 'ease',
+    easing: "ease",
   });
 
   return (

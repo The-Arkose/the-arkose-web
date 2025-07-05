@@ -1,19 +1,19 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
-import chest from '../../assets/chest.png';
-import background from '../../assets/contactBackground.png';
-import { Button } from '../../components/Button';
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
+import chest from "../../assets/chest.png";
+import background from "../../assets/contactBackground.png";
+import { Button } from "../../components/Button";
+import { Section } from "../../components/Section";
+import { Title } from "../../components/Title";
+import { useReveal } from "../../hooks/useReveal";
 
 const config = {
-  origin: 'left',
+  origin: "left",
   duration: 1000,
   delay: 150,
-  distance: '300px',
+  distance: "300px",
   opacity: 0,
-  easing: 'ease',
+  easing: "ease",
 };
 
 export const Contact = () => {
