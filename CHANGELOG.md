@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.2...v1.0.3) (2025-07-05)
+
+
+### Bug Fixes
+
+* **deps:** update all dependencies ([30cbbd9](https://github.com/The-Arkose/the-arkose-web/commit/30cbbd921d2546c2f6084160eefeece2882376fd))
+
 ## [1.0.2](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.1...v1.0.2) (2025-04-01)
 
 
