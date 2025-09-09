@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "4.7.0",
     "lefthook": "1.12.2",
     "typescript": "5.9.2",
-    "vite": "7.0.6"
+    "vite": "7.0.7"
   },
   "packageManager": "pnpm@10.14.0"
 }
