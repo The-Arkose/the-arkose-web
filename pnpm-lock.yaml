@@ -50,7 +50,7 @@ importers:
         version: 0.0.11
       '@vitejs/plugin-react':
         specifier: 4.7.0
-        version: 4.7.0(vite@7.0.7(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1))
+        version: 4.7.0(vite@7.0.8(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1))
       lefthook:
         specifier: 1.12.2
         version: 1.12.2
@@ -58,8 +58,8 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
       vite:
-        specifier: 7.0.7
-        version: 7.0.7(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1)
+        specifier: 7.0.8
+        version: 7.0.8(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1)
 
 packages:
 
@@ -1318,8 +1318,8 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite@7.0.7:
-    resolution: {integrity: sha512-hc6LujN/EkJHmxeiDJMs0qBontZ1cdBvvoCbWhVjzUFTU329VRyOC46gHNSA8NcOC5yzCeXpwI40tieI3DEZqg==}
+  vite@7.0.8:
+    resolution: {integrity: sha512-cJBdq0/u+8rgstg9t7UkBilf8ipLmeXJO30NxD5HAHOivnj10ocV8YtR/XBvd2wQpN3TmcaxNKaHX3tN7o5F5A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1965,7 +1965,7 @@ snapshots:
 
   '@types/scrollreveal@0.0.11': {}
 
-  '@vitejs/plugin-react@4.7.0(vite@7.0.7(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1))':
+  '@vitejs/plugin-react@4.7.0(vite@7.0.8(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.0)
@@ -1973,7 +1973,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.0.7(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1)
+      vite: 7.0.8(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -2585,7 +2585,7 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite@7.0.7(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1):
+  vite@7.0.8(@types/node@22.13.14)(jiti@2.4.2)(yaml@2.6.1):
     dependencies:
       esbuild: 0.25.2
       fdir: 6.4.6(picomatch@4.0.3)
