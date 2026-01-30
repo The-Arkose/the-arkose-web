@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.5...v1.0.6) (2026-01-30)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo ([#724](https://github.com/The-Arkose/the-arkose-web/issues/724)) ([db0ebab](https://github.com/The-Arkose/the-arkose-web/commit/db0ebabb6ba7e554d7d1229750300b4464690807))
+
 ## [1.0.5](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.4...v1.0.5) (2025-11-03)
 
 
