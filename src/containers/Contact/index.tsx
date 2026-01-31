@@ -2,10 +2,10 @@ import styled from '@emotion/styled';
 
 import chest from '../../assets/chest.png';
 import background from '../../assets/contactBackground.png';
-import { Button } from '../../components/Button';
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
+import { Button } from '../../components/Button.js';
+import { Section } from '../../components/Section.js';
+import { Title } from '../../components/Title.js';
+import { useReveal } from '../../hooks/useReveal.js';
 
 const config = {
   origin: 'left',

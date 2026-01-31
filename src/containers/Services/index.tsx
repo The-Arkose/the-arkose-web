@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { useMemo, useState } from 'react';
 
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
-import { allServices, servicesType } from './servicesMap';
+import { Section } from '../../components/Section.js';
+import { Title } from '../../components/Title.js';
+import { useReveal } from '../../hooks/useReveal.js';
+import { allServices, servicesType } from './servicesMap.js';
 
 export const Services = () => {
   const [selectorRef] = useReveal<HTMLDivElement>({

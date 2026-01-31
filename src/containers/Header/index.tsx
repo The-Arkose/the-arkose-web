@@ -3,8 +3,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 
 import background from '../../assets/main.png';
-import { Logo } from './Logo';
-import { Nav } from './Nav';
+import { Logo } from './Logo.js';
+import { Nav } from './Nav.js';
 
 export const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null);

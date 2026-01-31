@@ -1,11 +1,11 @@
 import { css, Global } from '@emotion/react';
 
-import { About } from './containers/About';
-import { Contact } from './containers/Contact';
-import { Footer } from './containers/Footer';
-import { Header } from './containers/Header';
-import { Server } from './containers/Server';
-import { Services } from './containers/Services';
+import { About } from './containers/About/index.js';
+import { Contact } from './containers/Contact/index.js';
+import { Footer } from './containers/Footer/index.js';
+import { Header } from './containers/Header/index.js';
+import { Server } from './containers/Server/index.js';
+import { Services } from './containers/Services/index.js';
 
 export const App = () => (
   <>

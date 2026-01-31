@@ -4,9 +4,9 @@ import processor from '../../assets/processor.svg';
 import ram from '../../assets/ram.svg';
 import serverImg from '../../assets/server.svg';
 import background from '../../assets/serverBackground.png';
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
+import { Section } from '../../components/Section.js';
+import { Title } from '../../components/Title.js';
+import { useReveal } from '../../hooks/useReveal.js';
 
 export const Server = () => {
   const [serverImageRef] = useReveal<HTMLImageElement>({

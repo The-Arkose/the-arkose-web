@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 
 import player from '../../assets/player.png';
-import { Button } from '../../components/Button';
-import { Section } from '../../components/Section';
-import { Title } from '../../components/Title';
-import { useReveal } from '../../hooks/useReveal';
+import { Button } from '../../components/Button.js';
+import { Section } from '../../components/Section.js';
+import { Title } from '../../components/Title.js';
+import { useReveal } from '../../hooks/useReveal.js';
 
 export const About = () => {
   const [playerRef] = useReveal<HTMLImageElement>({
