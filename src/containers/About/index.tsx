@@ -1,45 +1,45 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-import player from "../../assets/player.png";
-import { Button } from "../../components/Button";
-import { Section } from "../../components/Section";
-import { Title } from "../../components/Title";
-import { useReveal } from "../../hooks/useReveal";
+import player from '../../assets/player.png';
+import { Button } from '../../components/Button';
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
 
 export const About = () => {
   const [playerRef] = useReveal<HTMLImageElement>({
-    origin: "left",
+    origin: 'left',
     duration: 1000,
     delay: 150,
-    distance: "300px",
+    distance: '300px',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   const [aboutParagraphRef] = useReveal<HTMLDivElement>({
-    origin: "top",
+    origin: 'top',
     duration: 1000,
     delay: 150,
-    distance: "300px",
+    distance: '300px',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   return (
-    <div id="About">
+    <div id='About'>
       <Wrapper>
-        <div className="row justify-content-around">
-          <div className="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4">
-            <Player src={player} alt="player" ref={playerRef} />
+        <div className='row justify-content-around'>
+          <div className='col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4'>
+            <Player src={player} alt='player' ref={playerRef} />
           </div>
-          <div className="col-10 col-sm-12 col-md-8 col-lg-6 col-xl-5">
+          <div className='col-10 col-sm-12 col-md-8 col-lg-6 col-xl-5'>
             <Title>About Us</Title>
             <br />
             <div ref={aboutParagraphRef}>
               <b>The Arkose Network</b> is a tiny group established since 2018
               <br />
-              Run by{" "}
-              <a href="https://www.youtube.com/user/mark1395711">MrMatches</a>{" "}
+              Run by{' '}
+              <a href='https://www.youtube.com/user/mark1395711'>MrMatches</a>{' '}
               and couple of partners
               <br />
               We aim to provide a stable hosting services platform for our users
@@ -47,7 +47,7 @@ export const About = () => {
               <br />
               <br />
               <br />
-              <Button href="#Services" text="Find out what we are hosting" />
+              <Button href='#Services' text='Find out what we are hosting' />
             </div>
           </div>
         </div>

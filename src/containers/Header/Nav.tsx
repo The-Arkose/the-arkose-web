@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { useState } from "react";
-import { Scrollchor } from "react-scrollchor";
+import styled from '@emotion/styled';
+import { useState } from 'react';
+import { Scrollchor } from 'react-scrollchor';
 
 export const Nav = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -11,60 +11,60 @@ export const Nav = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="d-none d-sm-none d-md-block">
-          <Menu className="nav">
+      <div className='container'>
+        <div className='d-none d-sm-none d-md-block'>
+          <Menu className='nav'>
             <li>
-              <Scrollchor to="#About" animate={{ offset: -100 }}>
+              <Scrollchor to='#About' animate={{ offset: -100 }}>
                 About Us
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to="#Server" animate={{ offset: -100 }}>
+              <Scrollchor to='#Server' animate={{ offset: -100 }}>
                 Server
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to="#Services" animate={{ offset: -100 }}>
+              <Scrollchor to='#Services' animate={{ offset: -100 }}>
                 Services
               </Scrollchor>
             </li>
             <li>
-              <Scrollchor to="#Contact" animate={{ offset: -100 }}>
+              <Scrollchor to='#Contact' animate={{ offset: -100 }}>
                 Contact Us
               </Scrollchor>
             </li>
             <li>
-              <a href="https://map.TheArkose.com">Online Map</a>
+              <a href='https://map.TheArkose.com'>Online Map</a>
             </li>
           </Menu>
         </div>
       </div>
-      <div className="d-block d-sm-block d-md-none">
-        <MenuIcon className="fas fa-bars" onClick={toggleMobileNav} />
+      <div className='d-block d-sm-block d-md-none'>
+        <MenuIcon className='fas fa-bars' onClick={toggleMobileNav} />
         <MobileMenu visible={showMobileNav}>
           <li>
-            <Scrollchor to="#About" animate={{ offset: -100 }}>
+            <Scrollchor to='#About' animate={{ offset: -100 }}>
               About Us
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to="#Server" animate={{ offset: -100 }}>
+            <Scrollchor to='#Server' animate={{ offset: -100 }}>
               Server
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to="#Services" animate={{ offset: -100 }}>
+            <Scrollchor to='#Services' animate={{ offset: -100 }}>
               Services
             </Scrollchor>
           </li>
           <li>
-            <Scrollchor to="#Contact" animate={{ offset: -100 }}>
+            <Scrollchor to='#Contact' animate={{ offset: -100 }}>
               Contact Us
             </Scrollchor>
           </li>
           <li>
-            <a href="https://map.TheArkose.com">Online Map</a>
+            <a href='https://map.TheArkose.com'>Online Map</a>
           </li>
         </MobileMenu>
       </div>
@@ -145,5 +145,5 @@ const MobileMenu = styled.ul<{ visible: boolean }>`
   height: 270px;
   overflow: hidden;
   `
-      : ""}
+      : ''}
 `;

@@ -1,28 +1,28 @@
-import styled from "@emotion/styled";
-import { useMemo, useState } from "react";
+import styled from '@emotion/styled';
+import { useMemo, useState } from 'react';
 
-import { Section } from "../../components/Section";
-import { Title } from "../../components/Title";
-import { useReveal } from "../../hooks/useReveal";
-import { allServices, servicesType } from "./servicesMap";
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
+import { allServices, servicesType } from './servicesMap';
 
 export const Services = () => {
   const [selectorRef] = useReveal<HTMLDivElement>({
-    origin: "left",
+    origin: 'left',
     duration: 1000,
     delay: 150,
-    distance: "300px",
+    distance: '300px',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   const [listRef] = useReveal<HTMLUListElement>({
-    origin: "left",
+    origin: 'left',
     duration: 1000,
     delay: 150,
-    distance: "0",
+    distance: '0',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   const [type, setType] = useState(servicesType.MC);
@@ -36,21 +36,21 @@ export const Services = () => {
   );
 
   return (
-    <div id="Services">
+    <div id='Services'>
       <Wrapper>
-        <div className="row">
-          <div className="col-12">
+        <div className='row'>
+          <div className='col-12'>
             <Title>Services</Title>
             <br />
           </div>
-          <Selector className="col-12" ref={selectorRef}>
-            <button type="button" onClick={() => setType(servicesType.ALL)}>
+          <Selector className='col-12' ref={selectorRef}>
+            <button type='button' onClick={() => setType(servicesType.ALL)}>
               All
             </button>
-            <button type="button" onClick={() => setType(servicesType.MC)}>
+            <button type='button' onClick={() => setType(servicesType.MC)}>
               Minecraft
             </button>
-            <button type="button" onClick={() => setType(servicesType.STEAM)}>
+            <button type='button' onClick={() => setType(servicesType.STEAM)}>
               Steam
             </button>
           </Selector>
@@ -58,7 +58,7 @@ export const Services = () => {
             {items.map(({ icon, name }, i) => (
               // biome-ignore lint/suspicious/noArrayIndexKey: doesn't matter
               <li key={i}>
-                <img src={icon} alt="icon" />
+                <img src={icon} alt='icon' />
                 {name}
               </li>
             ))}

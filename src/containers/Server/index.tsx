@@ -1,58 +1,58 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
-import processor from "../../assets/processor.svg";
-import ram from "../../assets/ram.svg";
-import serverImg from "../../assets/server.svg";
-import background from "../../assets/serverBackground.png";
-import { Section } from "../../components/Section";
-import { Title } from "../../components/Title";
-import { useReveal } from "../../hooks/useReveal";
+import processor from '../../assets/processor.svg';
+import ram from '../../assets/ram.svg';
+import serverImg from '../../assets/server.svg';
+import background from '../../assets/serverBackground.png';
+import { Section } from '../../components/Section';
+import { Title } from '../../components/Title';
+import { useReveal } from '../../hooks/useReveal';
 
 export const Server = () => {
   const [serverImageRef] = useReveal<HTMLImageElement>({
     duration: 1000,
     delay: 150,
     scale: 0.9,
-    distance: "0",
+    distance: '0',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   const [cpuRef] = useReveal<HTMLDivElement>({
     duration: 700,
     delay: 150,
-    distance: "200px",
+    distance: '200px',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   const [ramRef] = useReveal<HTMLDivElement>({
     duration: 700,
     delay: 150,
-    distance: "200px",
+    distance: '200px',
     opacity: 0,
-    easing: "ease",
+    easing: 'ease',
   });
 
   return (
-    <div id="Server">
+    <div id='Server'>
       <Wrapper backgroundImg={background}>
-        <div className="row">
-          <div className="col-12">
+        <div className='row'>
+          <div className='col-12'>
             <Title>Meet our server</Title>
-            <Image src={serverImg} alt="server" ref={serverImageRef} />
+            <Image src={serverImg} alt='server' ref={serverImageRef} />
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 col-sm-6">
+        <div className='row'>
+          <div className='col-12 col-sm-6'>
             <Component ref={cpuRef}>
-              <img src={processor} alt="processor" />
+              <img src={processor} alt='processor' />
               <span>E5 2690 v2</span>
             </Component>
           </div>
-          <div className="col-12 col-sm-6">
+          <div className='col-12 col-sm-6'>
             <Component ref={ramRef}>
-              <img src={ram} alt="ram" />
+              <img src={ram} alt='ram' />
               <span>32GB ECC</span>
             </Component>
           </div>
