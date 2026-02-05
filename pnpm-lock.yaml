@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@emotion/react':
         specifier: 11.14.0
-        version: 11.14.0(@types/react@19.2.11)(react@19.2.4)
+        version: 11.14.0(@types/react@19.2.13)(react@19.2.4)
       '@emotion/styled':
         specifier: 11.14.1
-        version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.11)(react@19.2.4))(@types/react@19.2.11)(react@19.2.4)
+        version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.13)(react@19.2.4))(@types/react@19.2.13)(react@19.2.4)
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -46,11 +46,11 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(typescript@5.9.3)
       '@types/react':
-        specifier: 19.2.11
-        version: 19.2.11
+        specifier: 19.2.13
+        version: 19.2.13
       '@types/react-dom':
         specifier: 19.2.3
-        version: 19.2.3(@types/react@19.2.11)
+        version: 19.2.3(@types/react@19.2.13)
       '@types/scrollreveal':
         specifier: 0.0.11
         version: 0.0.11
@@ -696,8 +696,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.11':
-    resolution: {integrity: sha512-tORuanb01iEzWvMGVGv2ZDhYZVeRMrw453DCSAIn/5yvcSVnMoUMTyf33nQJLahYEnv9xqrTNbgz4qY5EfSh0g==}
+  '@types/react@19.2.13':
+    resolution: {integrity: sha512-KkiJeU6VbYbUOp5ITMIc7kBfqlYkKA5KhEHVrGMmUUMt7NeaZg65ojdPk+FtNrBAOXNVM5QM72jnADjM+XVRAQ==}
 
   '@types/scrollreveal@0.0.11':
     resolution: {integrity: sha512-GDOESLkVNyd5FIS980N9rDtp45L7jfyvbDuumtaMXMPfJOFOk/7ADNvXaL/NBggXJHQJSgNNHsJBrQ2mTE7+cA==}
@@ -1672,7 +1672,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@19.2.11)(react@19.2.4)':
+  '@emotion/react@11.14.0(@types/react@19.2.13)(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@emotion/babel-plugin': 11.13.5
@@ -1684,7 +1684,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.11
+      '@types/react': 19.2.13
     transitivePeerDependencies:
       - supports-color
 
@@ -1698,18 +1698,18 @@ snapshots:
 
   '@emotion/sheet@1.4.0': {}
 
-  '@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.11)(react@19.2.4))(@types/react@19.2.11)(react@19.2.4)':
+  '@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.13)(react@19.2.4))(@types/react@19.2.13)(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@emotion/babel-plugin': 11.13.5
       '@emotion/is-prop-valid': 1.4.0
-      '@emotion/react': 11.14.0(@types/react@19.2.11)(react@19.2.4)
+      '@emotion/react': 11.14.0(@types/react@19.2.13)(react@19.2.4)
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.2.4)
       '@emotion/utils': 1.4.2
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.11
+      '@types/react': 19.2.13
     transitivePeerDependencies:
       - supports-color
 
@@ -1941,11 +1941,11 @@ snapshots:
 
   '@types/parse-json@4.0.2': {}
 
-  '@types/react-dom@19.2.3(@types/react@19.2.11)':
+  '@types/react-dom@19.2.3(@types/react@19.2.13)':
     dependencies:
-      '@types/react': 19.2.11
+      '@types/react': 19.2.13
 
-  '@types/react@19.2.11':
+  '@types/react@19.2.13':
     dependencies:
       csstype: 3.2.3
 
@@ -2358,7 +2358,7 @@ snapshots:
       react: 19.2.4
       requestanimationframe-timer: 3.0.3
     optionalDependencies:
-      '@types/react': 19.2.11
+      '@types/react': 19.2.13
 
   react-universal-interface@0.6.2(react@19.2.4)(tslib@2.8.1):
     dependencies:
