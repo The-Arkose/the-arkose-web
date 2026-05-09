@@ -1,5 +1,5 @@
-onlyBuiltDependencies:
-  - '@biomejs/biome'
-  - esbuild
-  - lefthook
-  - scrollreveal
+allowBuilds:
+  '@biomejs/biome': true
+  esbuild: true
+  lefthook: true
+  scrollreveal: true
