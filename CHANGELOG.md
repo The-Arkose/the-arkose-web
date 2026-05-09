@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.7...v1.0.8) (2026-05-09)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v19.2.6 ([#833](https://github.com/The-Arkose/the-arkose-web/issues/833)) ([7529662](https://github.com/The-Arkose/the-arkose-web/commit/7529662de3d6cc82a83068e277f89376436bbd6a))
+
 ## [1.0.7](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.6...v1.0.7) (2026-04-09)
 
 
