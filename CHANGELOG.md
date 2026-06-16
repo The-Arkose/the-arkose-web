@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.9](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.8...v1.0.9) (2026-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-use to v17.6.1 ([#864](https://github.com/The-Arkose/the-arkose-web/issues/864)) ([96ea13f](https://github.com/The-Arkose/the-arkose-web/commit/96ea13f610b8595fada9f946364dd287ec5c8cd3))
+* **deps:** update react monorepo ([#867](https://github.com/The-Arkose/the-arkose-web/issues/867)) ([03bbd29](https://github.com/The-Arkose/the-arkose-web/commit/03bbd296b8475c237dd5189a85fef067d4ba500e))
+
 ## [1.0.8](https://github.com/The-Arkose/the-arkose-web/compare/v1.0.7...v1.0.8) (2026-05-09)
 
 
