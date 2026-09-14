@@ -17,8 +17,8 @@
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "react-scrollchor": "7.0.2",
     "react-use": "17.6.1",
     "scrollreveal": "4.0.9"
@@ -29,8 +29,8 @@
     "@marklai/shared-config-biome": "1.0.2",
     "@marklai/shared-config-commitlint": "1.1.1",
     "@marklai/shared-config-typescript": "1.1.2",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.7",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "@types/scrollreveal": "0.0.11",
     "@vitejs/plugin-react": "6.1.1",
     "lefthook": "2.1.12",
