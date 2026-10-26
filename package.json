@@ -24,7 +24,7 @@
     "scrollreveal": "4.0.9"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.2",
     "@commitlint/cli": "21.2.4",
     "@marklai/shared-config-biome": "1.0.2",
     "@marklai/shared-config-commitlint": "1.1.2",
@@ -35,7 +35,7 @@
     "@vitejs/plugin-react": "6.1.2",
     "lefthook": "2.2.2",
     "typescript": "7.0.2",
-    "vite": "8.3.4"
+    "vite": "8.3.5"
   },
   "packageManager": "pnpm@12.15.0"
 }
